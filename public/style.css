@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    position: fixed;
+    height: 100%;
+    background-color: MediumSeaGreen;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item{
+    list-style: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu-item:hover{
+    text-decoration: underline;
+    background-color:SeaGreen;
+}
+
+.workArea{
+    margin-left: 100px;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+.player{
+    width: 600px;
+    margin: 0 auto;
+}
+.audio{
+    display: block;
+    width: inherit;
+}
+
+.playList{
+    padding: 0;
+    margin-top: 20px;
+}
+
+.playList-title{
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    color:grey;
+    font-style: normal;
+}
+
+audio{
+    width: inherit;
+    background-color: Lavender;
+}
+
+.song{
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.song:hover{
+    text-decoration: underline;
+}
+
+.addVideo{
+    display: block;
+    width: 640px;
+    margin: 10px auto;
+    position: relative;
+    height: 40px;
+}
+
+.addVideo>input[type="text"]{
+    padding: 5px 60px 5px 10px;
+    margin: 0;
+    display: block;
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+}
+
+.addVideo>input[type="submit"]{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: inherit;
+    width: 60px;
+}
