@@ -3,8 +3,7 @@ var webpack = require('webpack');
 module.exports = {
     entry: "./client/main.js",
     output: {
-        path: __dirname + '/public/build/',
-        publicPath: "build/",
+        path: __dirname + "/public/build",
         filename: "bundle.js"
     },
     module: {

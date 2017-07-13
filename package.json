@@ -22,7 +22,7 @@
   "devDependencies": {
     "babel": "5.x",
     "babel-loader": "5.*",
-    "webpack": "^1.12.12",
+    "webpack": "^1.15.0",
     "webpack-dev-server": "^1.14.1"
   }
 }
