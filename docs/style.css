@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    position: fixed;
+    height: 100%;
+    background-color: MediumSeaGreen;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item{
+    list-style: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu-item:hover{
+    text-decoration: underline;
+    background-color:SeaGreen;
+}
+
+.workArea{
+    margin-left: 100px;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+.player{
+    width: 600px;
+    margin: 0 auto;
+}
+.audio{
+    display: block;
+    width: inherit;
+}
+
+.playList{
+    padding: 0;
+    margin-top: 20px;
+}
+
+.playList-title{
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    color:grey;
+    font-style: normal;
+}
+
+audio{
+    width: inherit;
+    background-color: Lavender;
+}
+
+.song{
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.song:hover{
+    text-decoration: underline;
+}
+
+.addVideo{
+    display: block;
+    width: 640px;
+    margin: 10px auto;
+    position: relative;
+    height: 40px;
+}
+
+.addVideo>input[type="text"]{
+    padding: 5px 60px 5px 10px;
+    margin: 0;
+    display: block;
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+}
+
+.addVideo>input[type="submit"]{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: inherit;
+    width: 60px;
+}
+
+.note{
+    display: inline-block;
+    margin:5px;
+    padding: 20px 40px;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 250px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.note span{
+    display: block;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.addNote{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.addNote input[type="submit"]{
+    padding: 10px 30px;
+    border: none;
+    background-color: #003333;
+    margin-top: 10px;
+    float: right;
+    color: white;
+    border-bottom-right-radius: 3px;
+
+}
+
+.addNote textarea{
+    width: 300px;
+    height: 150px;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #99CCFF;
+    resize: none;
+    display: block;
+    border: 1px solid #3399FF;
+    border-radius: 2px;
+}
+
+::-webkit-input-placeholder{
+    color: white;
+    font-size: 16px;
+}
+::-moz-placeholder{
+    color: white;
+    font-size: 16px;
+}
+:-moz-placeholder{
+    color: white;
+    font-size: 16px;
+}
+:-ms-input-placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+.paletteItem{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.paletteItem span {
+    width: inherit;
+    height: inherit;
+    border-radius: 2px;
+    border: none;
+    box-sizing: border-box;
+    position: absolute;
+    left:0px;
+}
+
+input[type='radio']{
+    margin: 0;
+}
+
+.palette input[type='radio']:checked ~span {
+    border: 1px solid #003333;
+}
