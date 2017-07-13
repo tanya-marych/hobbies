@@ -31,7 +31,7 @@ class AddVideo extends React.Component{
         //parse string
         let parse = input.split("=");
         if(parse.length===2 && parse[0]==='https://www.youtube.com/watch?v'){
-            this.props.addLink(parse[1]);
+            this.props.addVideo(parse[1]);
         }else{
             //throw Error
         }
@@ -50,17 +50,13 @@ class AddVideo extends React.Component{
 class Video extends React.Component {
     constructor(props){
         super(props);
-        this._addLink = this._addLink.bind(this);
     }
-    _addLink(link){
-        console.log("im still here");
-        this.props.addVideo(link);
-    }
+
     render(){
         return (
             <div>
-                <AddVideo list={this.props.source} addLink={this._addLink}/>
-                <Player className="player" source={this.props.source}/>
+                <AddVideo list={this.props.data} addVideo={this.props.addVideo}/>
+                <Player className="player" source={this.props.data}/>
             </div>
 
         );

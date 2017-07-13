@@ -101,3 +101,103 @@ audio{
     height: inherit;
     width: 60px;
 }
+
+.note{
+    display: inline-block;
+    margin:5px;
+    padding: 20px 40px;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 250px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.note span{
+    display: block;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.addNote{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.addNote input[type="submit"]{
+    padding: 10px 30px;
+    border: none;
+    background-color: #003333;
+    margin-top: 10px;
+    float: right;
+    color: white;
+    border-bottom-right-radius: 3px;
+
+}
+
+.addNote textarea{
+    width: 300px;
+    height: 150px;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #99CCFF;
+    resize: none;
+    display: block;
+    border: 1px solid #3399FF;
+    border-radius: 2px;
+}
+
+::-webkit-input-placeholder{
+    color: white;
+    font-size: 16px;
+}
+::-moz-placeholder{
+    color: white;
+    font-size: 16px;
+}
+:-moz-placeholder{
+    color: white;
+    font-size: 16px;
+}
+:-ms-input-placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+.paletteItem{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.paletteItem span {
+    width: inherit;
+    height: inherit;
+    border-radius: 2px;
+    border: none;
+    box-sizing: border-box;
+    position: absolute;
+    left:0px;
+}
+
+input[type='radio']{
+    margin: 0;
+}
+
+.palette input[type='radio']:checked ~span {
+    border: 1px solid #003333;
+}
