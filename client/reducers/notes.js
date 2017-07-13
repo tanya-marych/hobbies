@@ -1,12 +1,13 @@
 const initialState = [{
         "id":0,
-        "text":"eat something tasty :)",
+        "text":"eat something tasty",
         "color":"#33CCCC"
     },{
         "id":1,
         "text":"go walking",
         "color":"#339999"
-    },{
+    }
+    ,{
         "id":2,
         "text":"read book",
         "color":"#66CCFF"

@@ -1,16 +1,25 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
-    entry: "./client/main.js",
+    entry: './client/main.js',
     output: {
-        path: __dirname + "/public/build",
+        path:  __dirname+"/public/build/",
+        publicPath:"/build",
         filename: "bundle.js"
     },
+    devServer: {
+        contentBase: __dirname + "/public",
+        port: 3000
+    },
+    plugins:[
+        new webpack.HotModuleReplacementPlugin()
+    ],
     module: {
         loaders: [
             {
                 test: /\.js$/,
-                loader: "babel",
+                loader: "babel-loader",
                 exclude: [/node_modules/, /public/]
             },
             {

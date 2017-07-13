@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "collection of interest",
   "scripts": {
+      "build": "NODE_ENV=production webpack -p --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack-devserver": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 3000 --host 0.0.0.0"
+    "start": "webpack-dev-server",
+    "webpack-devserver": "webpack-dev-server --debug  --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 3000 --host 0.0.0.0"
   },
   "author": "Tanya Marych",
   "license": "ISC",
   "dependencies": {
-    "babel": "^6.23.0",
+    "babel-core": "^6.25.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "mongoose": "^4.10.8",
@@ -17,12 +19,15 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-youtube": "^7.4.0",
-    "redux": "^3.7.1"
+    "redux": "^3.7.1",
+    "webpack": "^3.2.0",
+    "webpack-devserver": "0.0.6"
   },
   "devDependencies": {
-    "babel": "5.x",
-    "babel-loader": "5.*",
-    "webpack": "^1.15.0",
-    "webpack-dev-server": "^1.14.1"
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "7.*",
+    "babel-preset-react": "^6.24.1",
+    "webpack-dev-server": "2.5.1"
   }
 }
